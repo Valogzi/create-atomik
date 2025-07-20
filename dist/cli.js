@@ -39,7 +39,7 @@ const create_1 = require("./commands/create");
 const path = __importStar(require("path"));
 const fs = __importStar(require("fs"));
 // Read package.json from the correct location
-const packageJsonPath = path.resolve(__dirname, '../../package.json');
+const packageJsonPath = path.resolve(__dirname, '../package.json');
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
 commander_1.program
     .name('atomik')
