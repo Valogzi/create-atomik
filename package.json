@@ -1,5 +1,5 @@
 {
-	"name": "create-atomik",
+	"name": "create-atomikjs",
 	"version": "1.0.1",
 	"description": "",
 	"main": "dist/package/cli.js",
@@ -7,7 +7,7 @@
 		"build": "tsc"
 	},
 	"bin": {
-		"atomik": "dist/package/cli.js"
+		"atomikjs": "dist/package/cli.js"
 	},
 	"keywords": [],
 	"author": "",
