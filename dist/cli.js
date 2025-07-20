@@ -44,10 +44,7 @@ const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
 commander_1.program
     .name('atomik')
     .description('CLI for Atomik - The ultra-fast web framework')
-    .version(packageJson.version);
-commander_1.program
-    .command('create')
-    .description('Create a new Atomik project')
+    .version(packageJson.version)
     .argument('<project-name>', 'Name of the project')
     .option('--typescript', 'Use TypeScript (default)', true)
     .option('--javascript', 'Use JavaScript instead of TypeScript')
