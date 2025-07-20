@@ -6,7 +6,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 // Read package.json from the correct location
-const packageJsonPath = path.resolve(__dirname, '../../package.json');
+const packageJsonPath = path.resolve(__dirname, '../package.json');
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
 
 program
