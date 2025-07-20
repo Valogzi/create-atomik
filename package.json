@@ -1,0 +1,21 @@
+{
+	"name": "create-atomik",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/package/cli.js",
+	"scripts": {
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.12.4",
+	"devDependencies": {
+		"@types/node": "^24.0.15",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"atomikjs": "^1.0.19",
+		"commander": "^14.0.0"
+	}
+}
