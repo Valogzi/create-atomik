@@ -108,16 +108,14 @@ function getTemplateFiles(template, ext) {
 }
 function getMainTemplate(template, isTS) {
     const importType = isTS
-        ? "import { Atomik, cors } from 'atomikjs';"
-        : "const { Atomik, cors } = require('atomikjs');";
+        ? "import { Atomik, cors, serve } from 'atomikjs';"
+        : "const { Atomik, cors, serve } = require('atomikjs');";
     return `${importType}
 
-const app = new Atomik({
-	port: 3000,
-	callback: () => {
-		console.log('🚀 Server running on http://localhost:3000');
-	},
-});
+const app = new Atomik();
+
+// Middleware
+app.use(cors());
 
 app.get('/', c => {
 	return c.text('Hello, Atomik! 🚀 Bienvenue à Atomik! 你好 🌍');
@@ -149,7 +147,13 @@ app.get('/html', c => {
 		</body>
 		</html>
 	\`);
-});`;
+});
+
+// if you want to use nodejs runtime
+// serve({ app: app })
+
+export default app;
+`;
 }
 function getReadmeTemplate() {
     return `# Atomik Project

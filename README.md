@@ -1,6 +1,6 @@
 # create-atomikjs
 
-The official CLI tool for creating new [AtomikJS](https://github.com/Valogzi/atomikjs) projects.
+The official CLI tool for creating new [AtomikJS](https://github.com/Valogzi/atomik) projects.
 
 ## Quick Start
 
@@ -82,7 +82,7 @@ After creating your project:
    pnpm dev
    ```
 
-3. **Open your browser:** Visit [http://localhost:3000](http://localhost:3000) to see your app running!
+3. **Open your browser:** Visit [http://localhost:5489](http://localhost:5489) to see your app running!
 
 ## Available Routes
 
