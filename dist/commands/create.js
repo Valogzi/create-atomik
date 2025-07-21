@@ -219,7 +219,8 @@ function getTsConfigTemplate() {
 		"resolveJsonModule": true,
 		"declaration": true,
 		"declarationMap": true,
-		"sourceMap": true
+		"sourceMap": true,
+		"types": ["node"]
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist"]
